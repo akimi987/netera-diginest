@@ -1,8 +1,14 @@
 import React from 'react';
+import DevImage from '../assets/img/Dev.jpeg';
+import DigiMark from '../assets/img/DigiMark.jpeg';
+import SEOImage from '../assets/img/SEO.jpeg';
+import EquipeImage from '../assets/img/equipe_netera.jpeg'
+import Navbar from '../components/navbar';
 
 const Home: React.FC = () => {
   return (
     <>
+      <Navbar />
       <div className="bg-gradient-to-b from-primary to-secondary min-h-screen flex flex-col items-center justify-center text-white">
         <h1 className="text-5xl md:text-6xl font-bold text-center animate-zoomIn">
           Bienvenue à <span className="text-primary">NetEra DigiNest!</span>
@@ -27,35 +33,51 @@ const Home: React.FC = () => {
         </div>
         <div className="md:w-1/2 flex justify-center">
           <img
-            src="../assets/img/equipe_netera.jpeg"
+            src={EquipeImage}
             alt="NetEra DigiNest"
             className="w-full h-auto max-w-md rounded-lg shadow-lg animate-slideInRight"
           />
         </div>
       </div>
-      <div className="bg-primary py-16 text-white">
-        <h2 className="text-4xl font-bold text-center mb-8">Nos Services</h2>
-        <div className="flex flex-col md:flex-row justify-center space-y-8 md:space-y-0 md:space-x-8 px-4">
-          <div className="bg-secondary p-6 rounded-lg shadow-lg transform hover:scale-105 transition-all duration-300">
-            <h3 className="text-2xl font-bold mb-2">Développement Web</h3>
-            <p className="text-lg">
-              Des sites web élégants et performants adaptés à vos besoins.
-            </p>
-          </div>
-          <div className="bg-secondary p-6 rounded-lg shadow-lg transform hover:scale-105 transition-all duration-300">
-            <h3 className="text-2xl font-bold mb-2">Marketing Digital</h3>
-            <p className="text-lg">
-              Stratégies marketing sur mesure pour maximiser votre présence en ligne.
-            </p>
-          </div>
-          <div className="bg-secondary p-6 rounded-lg shadow-lg transform hover:scale-105 transition-all duration-300">
-            <h3 className="text-2xl font-bold mb-2">SEO & Référencement</h3>
-            <p className="text-lg">
-              Améliorez votre visibilité sur les moteurs de recherche avec notre expertise SEO.
-            </p>
-          </div>
-        </div>
-      </div>
+<div className="bg-primary py-16 text-white">
+  <h2 className="text-4xl font-bold text-center mb-8">Nos Services</h2>
+  <div className="flex flex-col md:flex-row justify-center space-y-8 md:space-y-0 md:space-x-8 px-4">
+    <div className="bg-secondary p-6 rounded-lg shadow-lg transform hover:scale-105 transition-all duration-300">
+      <img
+        src={DevImage}
+        alt="Développement Web"
+        className="w-full h-40 object-cover rounded-t-md"
+      />
+      <h3 className="text-2xl font-bold mt-4 mb-2">Développement Web</h3>
+      <p className="text-lg">
+        Des sites web élégants et performants adaptés à vos besoins.
+      </p>
+    </div>
+    <div className="bg-secondary p-6 rounded-lg shadow-lg transform hover:scale-105 transition-all duration-300">
+      <img
+        src={DigiMark}
+        alt="Marketing Digital"
+        className="w-full h-40 object-cover rounded-t-md"
+      />
+      <h3 className="text-2xl font-bold mt-4 mb-2">Marketing Digital</h3>
+      <p className="text-lg">
+        Stratégies marketing sur mesure pour maximiser votre présence en ligne.
+      </p>
+    </div>
+    <div className="bg-secondary p-6 rounded-lg shadow-lg transform hover:scale-105 transition-all duration-300">
+      <img
+        src={SEOImage}
+        alt="SEO & Référencement"
+        className="w-full h-40 object-cover rounded-t-md"
+      />
+      <h3 className="text-2xl font-bold mt-4 mb-2">SEO & Référencement</h3>
+      <p className="text-lg">
+        Améliorez votre visibilité sur les moteurs de recherche avec notre expertise SEO.
+      </p>
+    </div>
+  </div>
+</div>
+
 
       <div className="bg-secondary py-16 px-8 text-white">
         <h2 className="text-4xl font-bold text-center mb-8">Ce que disent nos clients</h2>
