@@ -73,7 +73,6 @@ const Navbar: React.FC = () => {
             Contact
           </a>
         </div>
-        {/* Icône menu pour mobile */}
         <div className="md:hidden">
           <button onClick={toggleNav}>
             {navOpen ? (
@@ -84,7 +83,6 @@ const Navbar: React.FC = () => {
           </button>
         </div>
       </div>
-      {/* Menu mobile */}
       <div
         className={`md:hidden bg-white text-black flex flex-col items-center transition-all duration-300 ${
           navOpen ? 'max-h-60' : 'max-h-0 overflow-hidden'
@@ -96,10 +94,10 @@ const Navbar: React.FC = () => {
         <a href="#about" className="py-2 text-lg text-black  hover:text-red-600">
           À propos
         </a>
-        <a href="#testimonials" className="py-2 text-lg text-black  hover:text-red-600">
+        <a href="#temoignages" className="py-2 text-lg text-black  hover:text-red-600">
           Témoignages
         </a>
-        <a href="#contact" className="py-2 text-lg text-black  hover:text-red-600">
+        <a href="#contact" className="py-2 text-lg text-black hover:text-red-600">
           Contact
         </a>
       </div>
