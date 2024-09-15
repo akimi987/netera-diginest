@@ -1,21 +1,15 @@
-import { useState } from 'react';
+import React from 'react';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import Home from './pages/Home';
 
-function App() {
-  const [message, setMessage] = useState('Bienvenue à NetEra DigiNest!');
-
+const App: React.FC = () => {
   return (
-    <div className="bg-secondary text-white min-h-screen flex items-center justify-center">
-      <h1 className="text-4xl font-bold text-primary">
-        {message}
-      </h1>
-      <button
-        className="mt-4 px-4 py-2 bg-primary text-white rounded"
-        onClick={() => setMessage('Merci de visiter NetEra DigiNest!')}
-      >
-        Change Message
-      </button>
-    </div>
+    <Router>
+      <Routes>
+        <Route path="/" element={<Home />} />
+      </Routes>
+    </Router>
   );
-}
+};
 
 export default App;

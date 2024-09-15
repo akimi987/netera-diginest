@@ -27,14 +27,12 @@ const Home: React.FC = () => {
         </div>
         <div className="md:w-1/2 flex justify-center">
           <img
-            src="/path/to/your/image.jpg"
+            src="../assets/img/equipe_netera.jpeg"
             alt="NetEra DigiNest"
             className="w-full h-auto max-w-md rounded-lg shadow-lg animate-slideInRight"
           />
         </div>
       </div>
-
-      {/* Services en vedette */}
       <div className="bg-primary py-16 text-white">
         <h2 className="text-4xl font-bold text-center mb-8">Nos Services</h2>
         <div className="flex flex-col md:flex-row justify-center space-y-8 md:space-y-0 md:space-x-8 px-4">
@@ -59,7 +57,6 @@ const Home: React.FC = () => {
         </div>
       </div>
 
-      {/* Section Témoignages */}
       <div className="bg-secondary py-16 px-8 text-white">
         <h2 className="text-4xl font-bold text-center mb-8">Ce que disent nos clients</h2>
         <div className="space-y-8">
@@ -73,7 +70,6 @@ const Home: React.FC = () => {
             <p className="text-lg italic">
               "Leur expertise en marketing digital est incroyable. Hautement recommandé."
             </p>
-            <p className="mt-4 font-semibold text-right">- Autre Client</p>
           </div>
         </div>
       </div>
